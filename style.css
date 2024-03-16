@@ -51,7 +51,7 @@ html{
 	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
-@-webkit-keyframes tracking-in-expand {
+@keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
     opacity: 0;
@@ -78,7 +78,7 @@ html{
 
 
 #home{
-	height: 370px;
+	height: 550px;
 	background-image: url(https://miro.medium.com/v2/resize:fit:1400/format:webp/0*PXf5ge7QCN9Ga_CL.gif);
 	background-repeat: no-repeat;
 	background-size: 45%;
@@ -121,7 +121,6 @@ html{
     background-color: royalblue; 
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-
 }
 .rsmbtn:hover{
 		color: royalblue;
@@ -162,7 +161,7 @@ html{
 
 /*about styling*/
 .about-section{
-	height: 500px;
+	height: 550px;
 	width: 100%;
 	background-color: whitesmoke;
 }
@@ -227,4 +226,7 @@ html{
 	line-height: 40px;
 	text-indent: 100px;
 	letter-spacing: 1px;
+}
+#Skills{
+	margin-top: 100px;
 }
