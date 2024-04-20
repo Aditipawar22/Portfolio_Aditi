@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   
 	<!--style link below-->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -77,7 +77,7 @@
       <!-- skills section start here -->
       <section id="skills" class="portfolio-section skill-section">
         <h1 class="heading">SKILLS</h1>
-        <table class="tbl" height="450px" width="90%" >
+        <table class="tbl" height="450px" width="90%" cellspacing="10px" >
           <tr align="center" valign="top">
             <div class="borderskills">
               <td width="50%">
@@ -113,54 +113,55 @@
       </section>
 
       <!-- Project section start here -->
-      <section id="projects" class="portfolio-section">
-        <h1>PROJECTS</h1>
-        <div class="container">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" align="center">
-      <div class="card" style="width: 18rem;">
-        <img src="https://i.pinimg.com/736x/07/b2/40/07b240561cb656aec289df602e603bee.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Portfolio</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Project link</a>
+     
+<section id="projects" class="portfolio-section">
+  <h1>PROJECTS</h1>
+  <div class="container ">
+    <div id="carouselExampleControls " class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" align="center" id="project1">
+          <div class="card" style="width: 300px;">
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/17/22/agenda-152092_640.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio</h5>
+              <p class="card-text">Portfolio is developed using HTML and CSS technologies.</p>
+              <a href="#" class="btn btn-primary">Project link</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" id="project2">
+          <div class="card" style="width: 300px;">
+            <img src="https://cdn.pixabay.com/photo/2016/07/17/08/37/coins-1523383_640.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Back Management</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Project link</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" id="project3">
+          <div class="card" style="width: 300px;">
+            <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/05/06143128/iStock-875518498.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Deepfake Detection</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Project link</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card" style="width: 18rem;">
-        <img src="https://img.lovepik.com/free-png/20211203/lovepik-golden-retriever-dog-pet-cute-cute-hand-drawn-png-image_401288311_wh1200.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Back Management</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Project link</a>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card" style="width: 18rem;">
-        <img src="https://e7.pngegg.com/pngimages/868/112/png-clipart-dog-dog-6-animals-carnivoran-thumbnail.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Deepfake Detection</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Project link</a>
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+</section>
 
-        </div>
-      </section>
 
       <!-- Contact section start here -->
       <section id="contact" class="portfolio-section contact-section">
@@ -172,11 +173,11 @@
           </li>
           <li>
             <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-            <span class="text"><a href="aditip472@gmail.com" target="_blank">aditip472@gmail.com</a></span>
+            <span class="text">aditip472@gmail.com</span>
           </li>
           <li>
             <span class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
-            <span class="text"><a href="9822512631" target="_blank">9822512631</a></span>
+            <span class="text"><a href="9822512631" target="_blank">+91 9822512631</a></span>
           </li>
           <li>
             <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
