@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" type="image/png" href="https://png.pngtree.com/png-vector/20190403/ourmid/pngtree-vector-portfolio-icon-png-image_908476.jpg">
 	<!--bootstrap link below-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   
 	<!--style link below-->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -115,51 +114,66 @@
       <!-- Project section start here -->
      
 <section id="projects" class="portfolio-section">
-  <h1>PROJECTS</h1>
-  <div class="container ">
-    <div id="carouselExampleControls " class="carousel slide " data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" align="center" id="project1">
-          <div class="card" style="width: 300px;">
-            <img src="https://cdn.pixabay.com/photo/2013/07/12/17/22/agenda-152092_640.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio</h5>
-              <p class="card-text">Portfolio is developed using HTML and CSS technologies.</p>
-              <a href="#" class="btn btn-primary">Project link</a>
-            </div>
-          </div>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto mt-5">
+      <div class="card">
+        <div class="card-header heading">
+          Projects
         </div>
-        <div class="carousel-item" id="project2">
-          <div class="card" style="width: 300px;">
-            <img src="https://cdn.pixabay.com/photo/2016/07/17/08/37/coins-1523383_640.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Back Management</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Project link</a>
+        <div class="card-body">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-          </div>
-        </div>
-        <div class="carousel-item" id="project3">
-          <div class="card" style="width: 300px;">
-            <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/05/06143128/iStock-875518498.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Deepfake Detection</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Project link</a>
+            <div class="carousel-inner">
+              <div class="carousel-item active portfolio-slide">
+                <h3>Portfolio</h3>
+                <img src="https://img.freepik.com/free-photo/elevated-view-laptop-earphones-crumpled-papers-pencil-blank-spiral-notepad-frame-black-background_23-2148080331.jpg?t=st=1714061934~exp=1714065534~hmac=472a1e0e0a77d67d1fce97e39b4818d7337576881dd0100b0127e046de0bbc27&w=1060" class="d-block w-100 slides" alt="...">
+                <div class="carousel-info">
+                  <div class="slide-lines"></div>
+                  <p class="mt-3">Portfolio is developed using HTML and CSS technologies</p>
+                  <a href="" class="btn btn-primary" >Project Link</a>
+                </div>
+              </div>
+              <div class="carousel-item qtracker-slide">
+                <h3>Q-Tracker</h3>
+                <img src="https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041858.jpg?t=st=1714062451~exp=1714066051~hmac=c3eb5d1df317c6d85e11b2ca5403905d0a0e547d4e1c6c46de997db43faf239c&w=996" class="d-block w-100 slides" class="d-block w-100 slides" alt="...">
+                <div class="carousel-info">
+                  <div class="slide-lines"></div>
+                  <p class="mt-3">Small information about the project</p>
+                  <a href="#" class="btn btn-primary">Project Link</a>
+                </div>
+              </div>
+              <div class="carousel-item deepfake-slide">
+                <h3>Deepfake Detection</h3>
+                <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/05/06143128/iStock-875518498.jpg" class="d-block w-100 slides" class="d-block w-100 slides" alt="...">
+                <div class="carousel-info">
+                  <div class="slide-lines"></div>
+                  <p class="mt-3">Information about the project</p>
+                  <a href="#" class="btn btn-primary">Project Link</a>
+                </div>
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
           </div>
+          
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </section>
 
 
